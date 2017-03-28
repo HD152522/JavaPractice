@@ -15,10 +15,10 @@ package org.dimigo.oop;
  * @author : 비밀번호 아는 사람
  * @version : 1.0
  */
-public class CarTest2 {
+public class CarTest3 {
 
 	public static void main(String[] args) {
-		Car2 car1 = new Car2("현대자동차", "제네시스", "검정색", 225, 50000000);//d	
+		Car3 car1 = new Car3("현대자동차", "제네시스", "검정색", 225, 50000000);//d	
 //		car1.setCompany("현대자동차");
 //		car1.setModel("제네시스");
 //		car1.setColor("검정색");
@@ -32,7 +32,7 @@ public class CarTest2 {
 		System.out.println("가격 : "+String.format("%d", car1.getPrice())+"원");
 		System.out.println();
 		
-		Car2 car2 = new Car2("기아자동차", "K7", "흰색", 246, 40000000);
+		Car3 car2 = new Car3("기아자동차", "K7", "흰색", 246);
 //		car2.setCompany("기아자동차");
 //		car2.setModel("K7");
 //		car2.setColor("흰색");
@@ -46,7 +46,7 @@ public class CarTest2 {
 		System.out.println("가격 : "+String.format("%d", car2.getPrice())+"원");
 		System.out.println();
 		
-		Car2 car3 = new Car2("삼성자동차", "SM7", "회색", 200, 38000000);
+		Car3 car3 = new Car3("삼성자동차", "SM7", "회색");
 //		car3.setCompany("삼성자동차");
 //		car3.setModel("SM7");
 //		car3.setColor("회색");
@@ -60,7 +60,8 @@ public class CarTest2 {
 		System.out.println("가격 : "+String.format("%d", car3.getPrice())+"원");
 		System.out.println();
 		
-	
+		
+
 
 		
 		
