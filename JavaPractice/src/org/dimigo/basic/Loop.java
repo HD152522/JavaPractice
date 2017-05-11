@@ -11,11 +11,11 @@ import java.util.Scanner;
  * org.dimigo.basic
  *   |_Loop
  * 
- * 1. °³¿ä : 
- * 2. ÀÛ¼ºÀÏ : 2017. 3. 16.
+ * 1. ï¿½ï¿½ï¿½ï¿½ : 
+ * 2. ï¿½Û¼ï¿½ï¿½ï¿½ : 2017. 3. 16.
  * </pre>
  * 
- * @author : ºñ¹Ð¹øÈ£ ¾Æ´Â »ç¶÷
+ * @author : ï¿½ï¿½Ð¹ï¿½È£ ï¿½Æ´ï¿½ ï¿½ï¿½ï¿½
  * @version : 1.0
  */
 public class Loop {
@@ -26,35 +26,35 @@ public class Loop {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		int ap = 100;
-		String[] character = {"¸¶¹ý»ç", "¿µÁÖ", "±â»ç", "³ó¹Î"};
+		String[] character = {"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", "ï¿½ï¿½ï¿½ï¿½", "ï¿½ï¿½ï¿½", "ï¿½ï¿½ï¿½"};
 		int choice;
 		int setCharacter;
 		
 		do{
-			System.out.println("<<°ÔÀÓ ¸Þ´º>>");
-			System.out.println("1. °ø°Ý·Â Áõ°¡");
-			System.out.println("2. °ø°Ý·Â °¨¼Ò");
-			System.out.println("3. Ä³¸¯ÅÍ ¼³Á¤");
-			System.out.println("9. Á¾·á");
+			System.out.println("<<ï¿½ï¿½ï¿½ï¿½ ï¿½Þ´ï¿½>>");
+			System.out.println("1. ï¿½ï¿½ï¿½Ý·ï¿½ ï¿½ï¿½ï¿½ï¿½");
+			System.out.println("2. ï¿½ï¿½ï¿½Ý·ï¿½ ï¿½ï¿½ï¿½ï¿½");
+			System.out.println("3. Ä³ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½");
+			System.out.println("9. ï¿½ï¿½ï¿½ï¿½");
 			System.out.println("----------");
-			System.out.println("¸Þ´º ÀÔ·Â -> "); choice = scanner.nextInt();
+			System.out.println("ï¿½Þ´ï¿½ ï¿½Ô·ï¿½ -> "); choice = scanner.nextInt();
 			
 			
 			switch(choice){
 			case 1:
 				ap+=10;
-				System.out.printf("°ø°Ý·ÂÀÌ Áõ°¡µÇ¾ú½À´Ï´Ù. ÇöÀç °ø°Ý·Â %d\n", ap);
+				System.out.printf("ï¿½ï¿½ï¿½Ý·ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ç¾ï¿½ï¿½ï¿½ï¿½Ï´ï¿½. ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ý·ï¿½ %d\n", ap);
 				break;
 			case 2:
 				ap-=10;
-				System.out.printf("°ø°Ý·ÂÀÌ °¨¼ÒµÇ¾ú½À´Ï´Ù. ÇöÀç °ø°Ý·Â %d\n", ap);
+				System.out.printf("ï¿½ï¿½ï¿½Ý·ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ÒµÇ¾ï¿½ï¿½ï¿½ï¿½Ï´ï¿½. ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ý·ï¿½ %d\n", ap);
 				break;
 			case 3:
 				setCharacter = new Random().nextInt(4);
-				System.out.printf("%s(À¸)·Î ¼³Á¤µÇ¾ú½À´Ï´Ù. \n", character[setCharacter]);
+				System.out.printf("%s(ï¿½ï¿½)ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ç¾ï¿½ï¿½ï¿½ï¿½Ï´ï¿½. \n", character[setCharacter]);
 				break;
 			case 9:
-				System.out.println("ÀÌÁ¦ °øºÎÇÏ¼¼¿ä!");
+				System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½!");
 			}
 		} while(choice!=9);
 
