@@ -24,7 +24,13 @@ public class MovieTest {
 				
 		};
 		
-		for(Movie value : movies) value.buyTicket(12);
+		for(Movie value : movies) {
+			try {
+				value.buyTicket(12);
+			} catch(Exception e) {
+				System.out.println(e.getMessage());
+			}
+		}
 
 			
 	}
