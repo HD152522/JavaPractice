@@ -23,9 +23,9 @@ import java.util.Map;
 public class MelonGenreChart {
 
 	public static void main(String[] args) {
-		Map<String, List<Music>> map = new HashMap();
-		map.put("발라드", new ArrayList());
-		map.put("댄스", new ArrayList());
+		Map<String, List<Music>> map = new HashMap<String, List<Music>>();
+		map.put("발라드", new ArrayList<Music>());
+		map.put("댄스", new ArrayList<Music>());
 		map.get("발라드").add(new Music("팔레트", "아이유"));
 		map.get("댄스").add(new Music("I LUV IT", "PSY"));
 		map.get("댄스").add(new Music("맞지?", "언니쓰"));
